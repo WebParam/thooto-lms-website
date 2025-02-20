@@ -3,13 +3,22 @@ import './header.css';
 import Link from "next/link";
 // import Image from 'next/image';
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from 'react';
+import MobileHeader from '../mobileHeader/MobileHeader';
 export default function Header() {
+    const [open, setOpen] = useState(false);
 const pathname = usePathname();
 
+useEffect(() => {
+    if (open) setOpen(false);
+},[pathname])
+
     return (
+        <>
         <header
             id="header"
             className="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide navbar-scrolled"
+            style={{justifyContent:'space-between'}}
             data-hs-header-options='{
                 "fixMoment": 1000,
                 "fixEffect": "slide"
@@ -26,7 +35,7 @@ const pathname = usePathname();
                     alt="Logo"
                     />
                 </a>
-                <ul className="navbar-nav">
+                <ul className="navbar-nav desktop-nav">
                     <li className="nav-item">
                         <Link className={`nav-link ${pathname == '/' && 'active'}`} href="/">
                         home
@@ -48,10 +57,16 @@ const pathname = usePathname();
                         avatar
                         </Link>
                     </li>
-                    </ul>
+                </ul>
+
+                <div onClick={() => setOpen(prev => !prev)} className={`hamburger-menu ${open &&"open"}`}>
+                </div>
 
                 </nav>
             </div>
         </header>
+        {open && <MobileHeader />}
+        
+        </>
     )
 }
