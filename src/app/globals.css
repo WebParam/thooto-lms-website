@@ -43,3 +43,9 @@ a,.card-link,.list-checked-item {
 .light-green-bg {
   background-color: rgb(32, 59, 17, 0.5) !important;
 }
+
+.nav-link.active {
+  /* border-bottom: 2px solid; */
+  border-color: #203b11ff !important;
+  border-bottom: 1px solid red;
+}
