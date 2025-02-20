@@ -1,4 +1,5 @@
 'use client'
+// import Image from "next/image";
 import { useEffect } from "react";
 import HeroSection from "./components/hero/Hero";
 import Subscribe from "./components/subscribe/Subscribe";
@@ -8,6 +9,7 @@ export default function Home() {
 
   useEffect(() => {
   }, []);
+  
   
   return (
     <div>
@@ -25,7 +27,7 @@ export default function Home() {
       <ul className="step step-md step-centered">
         <li className="step-item">
           <div className="step-content-wrapper">
-            <span className="step-icon step-icon-soft-primary">1</span>
+            <span className="step-icon" style={{backgroundColor:'#203b11ff', color:'whitesmoke'}}>1</span>
             <div className="step-content">
               <h3>Custom Software Development</h3>
               <p>
@@ -36,7 +38,7 @@ export default function Home() {
         </li>
         <li className="step-item">
           <div className="step-content-wrapper">
-            <span className="step-icon step-icon-soft-primary">2</span>
+            <span className="step-icon" style={{backgroundColor:'#203b11ff', color:'whitesmoke'}}>2</span>
             <div className="step-content">
               <h3>QCTO-Compliant LMS</h3>
               <p>
@@ -47,7 +49,7 @@ export default function Home() {
         </li>
         <li className="step-item">
           <div className="step-content-wrapper">
-            <span className="step-icon step-icon-soft-primary">3</span>
+            <span className="step-icon" style={{backgroundColor:'#203b11ff', color:'whitesmoke'}}>3</span>
             <div className="step-content">
               <h3>Video Digitization & AI Content</h3>
               <p>Transforming traditional content into engaging, AI-powered digital media.</p>
@@ -58,178 +60,12 @@ export default function Home() {
       {/* End Step */}
     </div>
     {/* End Step */}
-    {/* Card Grid */}
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-6 mb-4 mb-lg-0">
-          {/* Card */}
-          <a
-            className="card card-transition align-items-end flex-wrap flex-row bg-img-start h-100 aos-init aos-animate"
-            href="#"
-            style={{
-              backgroundImage: "url(./assets/svg/components/card-4.svg)",
-              minHeight: "25rem"
-            }}
-            data-aos="fade-up"
-          >
-            <div className="card-body">
-              <h2 className="card-title text-white">
-                Revolutionizing the way start-ups win new customers
-              </h2>
-              <p className="card-text text-white">
-                Automate best strategies and focus more on generating hq
-                creatives.
-              </p>
-              <span className="card-link link-light">
-                Learn more <i className="bi-chevron-right small ms-1" />
-              </span>
-            </div>
-          </a>
-          {/* End Card */}
-        </div>
-        {/* End Col */}
-        <div className="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-          {/* Card */}
-          <a
-            className="card card-transition align-items-end flex-wrap flex-row bg-img-start h-100 aos-init aos-animate"
-            href="#"
-            style={{
-              backgroundImage: "url(./assets/svg/components/card-5.svg)",
-              minHeight: "25rem"
-            }}
-            data-aos="fade-up"
-            data-aos-delay={100}
-          >
-            <div className="card-body">
-              <h3 className="card-title text-white">
-                How we helped building the industry of the future
-              </h3>
-              <span className="card-link link-light">
-                Learn more <i className="bi-chevron-right small ms-1" />
-              </span>
-            </div>
-          </a>
-          {/* End Card */}
-        </div>
-        {/* End Col */}
-        <div className="col-sm-6 col-lg-3">
-          {/* Card */}
-          <a
-            className="card card-transition align-items-end flex-wrap flex-row bg-img-start h-100 aos-init aos-animate"
-            href="#"
-            style={{
-              backgroundImage: "url(./assets/svg/components/card-6.svg)",
-              minHeight: "25rem"
-            }}
-            data-aos="fade-up"
-            data-aos-delay={150}
-          >
-            <div className="card-body">
-              <h3 className="card-title text-white">
-                How to save hundreds of thousands
-              </h3>
-              <span className="card-link link-light">
-                Learn more <i className="bi-chevron-right small ms-1" />
-              </span>
-            </div>
-          </a>
-          {/* End Card */}
-        </div>
-        {/* End Col */}
-      </div>
-      {/* End Row */}
-    </div>
-    {/* End Card Grid */}
-    {/* Clients */}
-    <div className="container content-space-2 content-space-b-lg-3">
-      {/* Swiper Slider */}
-      <div className="js-swiper-clients swiper text-center swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-        <div
-          className="swiper-wrapper"
-          id="swiper-wrapper-66abb661020232fc7"
-          aria-live="polite"
-          style={{ transform: "translate3d(0px, 0px, 0px)" }}
-        >
-          <div
-            className="swiper-slide swiper-slide-active"
-            role="group"
-            aria-label="1 / 5"
-            style={{ width: "211.2px", marginRight: 15 }}
-          >
-            <img
-              className="avatar avatar-lg avatar-4x3"
-              src="./assets/svg/brands/fitbit-dark.svg"
-              alt="Logo"
-            />
-          </div>
-          {/* End Slide */}
-          <div
-            className="swiper-slide swiper-slide-next"
-            role="group"
-            aria-label="2 / 5"
-            style={{ width: "211.2px", marginRight: 15 }}
-          >
-            <img
-              className="avatar avatar-lg avatar-4x3"
-              src="./assets/svg/brands/forbes-dark.svg"
-              alt="Logo"
-            />
-          </div>
-          {/* End Slide */}
-          <div
-            className="swiper-slide"
-            role="group"
-            aria-label="3 / 5"
-            style={{ width: "211.2px", marginRight: 15 }}
-          >
-            <img
-              className="avatar avatar-lg avatar-4x3"
-              src="./assets/svg/brands/mailchimp-dark.svg"
-              alt="Logo"
-            />
-          </div>
-          {/* End Slide */}
-          <div
-            className="swiper-slide"
-            role="group"
-            aria-label="4 / 5"
-            style={{ width: "211.2px", marginRight: 15 }}
-          >
-            <img
-              className="avatar avatar-lg avatar-4x3"
-              src="./assets/svg/brands/layar-dark.svg"
-              alt="Logo"
-            />
-          </div>
-          {/* End Slide */}
-          <div
-            className="swiper-slide"
-            role="group"
-            aria-label="5 / 5"
-            style={{ width: "211.2px", marginRight: 15 }}
-          >
-            <img
-              className="avatar avatar-lg avatar-4x3"
-              src="./assets/svg/brands/hubspot-dark.svg"
-              alt="Logo"
-            />
-          </div>
-          {/* End Slide */}
-        </div>
-        <span
-          className="swiper-notification"
-          aria-live="assertive"
-          aria-atomic="true"
-        />
-      </div>
-      {/* End Swiper Slider */}
-    </div>
-    {/* End Clients */}
+
     {/* Card Grid */}
     <div
-      className="bg-dark rounded-2 mx-3 mx-xl-10"
+      className="rounded-2 mx-3 mx-xl-10 opacity-7"
       style={{
-        backgroundImage: "url(./assets/svg/components/wave-pattern-light.svg)"
+        backgroundColor:'#203b11ff'
       }}
     >
       <div className="container-xl container-fluid content-space-1 content-space-md-2 px-4 px-md-8 px-lg-10">
@@ -262,7 +98,7 @@ export default function Home() {
                   <img
                     className="card-img-top"
                     src="./assets/img/480x320/img7.jpg"
-                    alt="Image Description"
+                    alt="img Description"
                   />
                   <div className="card-body">
                     <div className="mb-3">
@@ -300,7 +136,7 @@ export default function Home() {
                   <img
                     className="card-img-top"
                     src="./assets/img/480x320/img6.jpg"
-                    alt="Image Description"
+                    alt="img Description"
                   />
                   <div className="card-body">
                     <div className="mb-3">
@@ -336,7 +172,7 @@ export default function Home() {
                   <img
                     className="card-img-top"
                     src="./assets/img/480x320/img14.jpg"
-                    alt="Image Description"
+                    alt="img Description"
                   />
                   <div className="card-body">
                     <div className="mb-3">
@@ -385,7 +221,7 @@ export default function Home() {
           <div className="row justify-content-lg-center align-items-md-center">
             <div className="col-md-5 mb-7 mb-md-0">
               {/* List Checked */}
-              <ul className="list-checked list-checked-soft-bg-primary list-checked-lg mb-5">
+              <ul className="list-checked list-checked-soft-bg-dark list-checked-lg mb-5">
                 <li className="list-checked-item">End-to-end software development</li>
                 <li className="list-checked-item">AI-driven content transformation</li>
                 <li className="list-checked-item">Cloud-based platforms for scale</li>
@@ -403,7 +239,7 @@ export default function Home() {
                 {/* Card */}
                 <div className="card">
                   <div className="card-body">
-                    <span className="svg-icon text-primary mb-4">
+                    <span className="svg-icon mb-4">
                       <svg
                         width={24}
                         height={24}
@@ -414,11 +250,11 @@ export default function Home() {
                         <path
                           opacity="0.3"
                           d="M22.0318 8.59998C22.0318 10.4 21.4318 12.2 20.0318 13.5C18.4318 15.1 16.3318 15.7 14.2318 15.4C13.3318 15.3 12.3318 15.6 11.7318 16.3L6.93177 21.1C5.73177 22.3 3.83179 22.2 2.73179 21C1.63179 19.8 1.83177 18 2.93177 16.9L7.53178 12.3C8.23178 11.6 8.53177 10.7 8.43177 9.80005C8.13177 7.80005 8.73176 5.6 10.3318 4C11.7318 2.6 13.5318 2 15.2318 2C16.1318 2 16.6318 3.20005 15.9318 3.80005L13.0318 6.70007C12.5318 7.20007 12.4318 7.9 12.7318 8.5C13.3318 9.7 14.2318 10.6001 15.4318 11.2001C16.0318 11.5001 16.7318 11.3 17.2318 10.9L20.1318 8C20.8318 7.2 22.0318 7.59998 22.0318 8.59998Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                         <path
                           d="M4.23179 19.7C3.83179 19.3 3.83179 18.7 4.23179 18.3L9.73179 12.8C10.1318 12.4 10.7318 12.4 11.1318 12.8C11.5318 13.2 11.5318 13.8 11.1318 14.2L5.63179 19.7C5.23179 20.1 4.53179 20.1 4.23179 19.7Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                       </svg>
                     </span>
@@ -438,7 +274,7 @@ export default function Home() {
                   <img
                     className="img-fluid"
                     src="./assets/svg/components/dots-lg.svg"
-                    alt="Image Description"
+                    alt="img Description"
                   />
                 </figure>
                 {/* End SVG Shape */}
@@ -464,7 +300,7 @@ export default function Home() {
               <div className="card-body">
                 <div className="d-flex">
                   <div className="flex-shrink-0">
-                    <span className="svg-icon text-primary">
+                    <span className="svg-icon">
                       <svg
                         width={24}
                         height={24}
@@ -476,14 +312,14 @@ export default function Home() {
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M22.1671 18.1421C22.4827 18.4577 23.0222 18.2331 23.0206 17.7868L23.0039 13.1053V5.52632C23.0039 4.13107 21.8729 3 20.4776 3H8.68815C7.2929 3 6.16183 4.13107 6.16183 5.52632V9H13C14.6568 9 16 10.3431 16 12V15.6316H19.6565L22.1671 18.1421Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                         <path
                           opacity="0.3"
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M1.98508 18V13C1.98508 11.8954 2.88051 11 3.98508 11H11.9851C13.0896 11 13.9851 11.8954 13.9851 13V18C13.9851 19.1046 13.0896 20 11.9851 20H4.10081L2.85695 21.1905C2.53895 21.4949 2.01123 21.2695 2.01123 20.8293V18.3243C1.99402 18.2187 1.98508 18.1104 1.98508 18ZM5.99999 14.5C5.99999 14.2239 6.22385 14 6.49999 14H11.5C11.7761 14 12 14.2239 12 14.5C12 14.7761 11.7761 15 11.5 15H6.49999C6.22385 15 5.99999 14.7761 5.99999 14.5ZM9.49999 16C9.22385 16 8.99999 16.2239 8.99999 16.5C8.99999 16.7761 9.22385 17 9.49999 17H11.5C11.7761 17 12 16.7761 12 16.5C12 16.2239 11.7761 16 11.5 16H9.49999Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                       </svg>
                     </span>
@@ -510,7 +346,7 @@ export default function Home() {
               <div className="card-body">
                 <div className="d-flex">
                   <div className="flex-shrink-0">
-                    <span className="svg-icon text-primary">
+                    <span className="svg-icon">
                       <svg
                         width={24}
                         height={24}
@@ -523,13 +359,13 @@ export default function Home() {
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M4.85714 1H11.7364C12.0911 1 12.4343 1.12568 12.7051 1.35474L17.4687 5.38394C17.8057 5.66895 18 6.08788 18 6.5292V19.0833C18 20.8739 17.9796 21 16.1429 21H4.85714C3.02045 21 3 20.8739 3 19.0833V2.91667C3 1.12612 3.02045 1 4.85714 1ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M6.85714 3H14.7364C15.0911 3 15.4343 3.12568 15.7051 3.35474L20.4687 7.38394C20.8057 7.66895 21 8.08788 21 8.5292V21.0833C21 22.8739 20.9796 23 19.1429 23H6.85714C5.02045 23 5 22.8739 5 21.0833V4.91667C5 3.12612 5.02045 3 6.85714 3ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z"
-                          fill="#035A4B"
+                          fill="#203b11ff"
                         />
                       </svg>
                     </span>
@@ -552,7 +388,7 @@ export default function Home() {
     {/* End Card Grid */}
     <Subscribe />
   {/* ========== FOOTER ========== */}
-  <footer className="bg-dark">
+  <footer style={{backgroundColor:'rgb(16 29 9)'}}>
     <div className="container pb-1 pb-lg-5">
       <div className="row content-space-t-2">
         <div className="col-lg-3 mb-7 mb-lg-0">
@@ -561,8 +397,8 @@ export default function Home() {
             <a className="navbar-brand" href="./index.html" aria-label="Space">
               <img
                 className="navbar-brand-logo"
-                src="./assets/svg/logos/logo-white.svg"
-                alt="Image Description"
+                src="./paramlogo.svg"
+                alt="img Description"
               />
             </a>
           </div>
@@ -598,7 +434,7 @@ export default function Home() {
               <a className="link-sm link-light" href="#">
                 Careers{" "}
                 <span className="badge bg-warning text-dark rounded-pill ms-1">
-                  We're hiring
+                  We are hiring
                 </span>
               </a>
             </li>
@@ -763,7 +599,7 @@ export default function Home() {
                     <img
                       className="avatar avatar-xss avatar-circle me-2"
                       src="./assets/vendor/flag-icon-css/flags/1x1/us.svg"
-                      alt="Image description"
+                      alt="img description"
                       width={16}
                     />
                     <span>English (US)</span>
@@ -780,7 +616,7 @@ export default function Home() {
                     <img
                       className="avatar avatar-xss avatar-circle me-2"
                       src="./assets/vendor/flag-icon-css/flags/1x1/us.svg"
-                      alt="Image description"
+                      alt="img description"
                       width={16}
                     />
                     <span>English (US)</span>
@@ -792,7 +628,7 @@ export default function Home() {
                     <img
                       className="avatar avatar-xss avatar-circle me-2"
                       src="./assets/vendor/flag-icon-css/flags/1x1/de.svg"
-                      alt="Image description"
+                      alt="img description"
                       width={16}
                     />
                     <span>Deutsch</span>
@@ -804,7 +640,7 @@ export default function Home() {
                     <img
                       className="avatar avatar-xss avatar-circle me-2"
                       src="./assets/vendor/flag-icon-css/flags/1x1/es.svg"
-                      alt="Image description"
+                      alt="img description"
                       width={16}
                     />
                     <span>Español</span>
@@ -816,7 +652,7 @@ export default function Home() {
                     <img
                       className="avatar avatar-xss avatar-circle me-2"
                       src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg"
-                      alt="Image description"
+                      alt="img description"
                       width={16}
                     />
                     <span>中文 (繁體)</span>
@@ -830,17 +666,6 @@ export default function Home() {
         </div>
       </div>
       {/* Copyright */}
-      <div className="w-md-85 text-lg-center mx-lg-auto">
-        <p className="text-white-50 small">
-          © Front. 2021 Htmlstream. All rights reserved.
-        </p>
-        <p className="text-white-50 small">
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
-        </p>
-      </div>
       {/* End Copyright */}
     </div>
   </footer>

@@ -19,3 +19,27 @@ body {
   background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+a,.card-link,.list-checked-item {
+  color: #203b11ff !important;
+}
+
+#list-checked-item {
+  color: #203b11ff !important;
+}
+
+.svg-icon[class*="text-"] > svg [fill]:not([fill="none"]) {
+  fill: #203b11ff !important;
+}
+
+.bg-green {
+  background-color: #203b11ff !important;
+}
+
+.color-green {
+  color: #203b11ff;
+}
+
+.light-green-bg {
+  background-color: rgb(32, 59, 17, 0.5) !important;
+}

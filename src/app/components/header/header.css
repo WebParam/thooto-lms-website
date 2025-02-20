@@ -1,0 +1,9 @@
+.nav-link {
+    opacity: .5;
+}
+
+.nav-link.active {
+    opacity: 1;
+    color: #203b11ff !important;
+    border-bottom: 2px solid #203b11ff;
+}
