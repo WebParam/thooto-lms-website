@@ -14,7 +14,7 @@
 
 @media (max-width:960px) {
     .desktop-nav {
-        display: none;
+        display: none !important;
     }    
 
     
