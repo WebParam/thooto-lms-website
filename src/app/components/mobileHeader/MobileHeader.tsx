@@ -5,7 +5,7 @@ export default function MobileHeader() {
     const path = usePathname()
 
     return (
-    <div className="nav nav-vertical" style={{height:'100vh', paddingTop:'70px', paddingLeft:'20px'}}>
+    <div className="nav nav-vertical" style={{height:'100vh', paddingTop:'50px', paddingLeft:'20px', position:'fixed', top:'0', left:'0',right:0, backgroundColor:'#fff',zIndex:100}} id="navbarVerticalNav">
     {/* Navbar */}
     <ul className="navbar-nav navbar-nav-lg nav-tabs">
         <li className="nav-item">

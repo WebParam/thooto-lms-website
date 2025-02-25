@@ -1,8 +1,54 @@
-// import Image from "next/image";
+'use client'
+import { useState } from "react";
 
 
 export default function Page() {
-    return (
+  const [activeId, setActiveId] = useState<string | null>('');
+
+  const toggleAccordion = (id:string) => {
+    setActiveId(activeId === id ? null : id);
+  };
+
+  
+const faq = [
+  {
+    id: "collapseOne",
+    headerId: "headingOne",
+    question: "What industries do you serve?",
+    answer:
+      "We build solutions for finance, healthcare, retail, logistics, and emerging tech sectors.",
+  },
+  {
+    id: "collapseTwo",
+    headerId: "headingTwo",
+    question: "Do you provide ongoing support and maintenance?",
+    answer:
+      "Yes! We offer long-term support, updates, and security patches to keep your software running smoothly.",
+  },
+  {
+    id: "collapseThree",
+    headerId: "headingThree",
+    question: "What cloud platforms do you work with?",
+    answer:
+      "We support AWS, Google Cloud, Azure, and private cloud solutions.",
+  },
+  {
+    id: "collapseFour",
+    headerId: "headingFour",
+    question: "Can you integrate AI into my application?",
+    answer:
+      "Absolutely! We specialize in AI-driven automation, chatbots, and predictive analytics.",
+  },
+  {
+    id: "collapseFive",
+    headerId: "headingFive",
+    question: "How long does a typical project take?",
+    answer:
+      "Project timelines vary, but MVPs can be delivered in 8–12 weeks, with full-scale solutions taking 3–6 months.",
+  },
+]
+
+  return (
     <>
     <div className="container content-space-t-3 content-space-t-lg-5">
         {/* Heading */}
@@ -299,138 +345,47 @@ export default function Page() {
     </div>
 
     <div className="container content-space-2 content-space-lg-3">
-      {/* Heading */}
-      <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <h2>Still curious?</h2>
-      </div>
-      {/* End Heading */}
-      <div className="w-lg-65 mx-lg-auto">
-        {/* Accordion */}
-        <div className="accordion accordion-flush accordion-lg" id="accordionFAQ">
-          {/* Accordion Item */}
-          <div className="accordion-item">
-            <div className="accordion-header" id="headingBasicsOne">
-              <a
-                className="accordion-button"
-                role="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What industries do you serve?
-              </a>
-            </div>
-            <div
-              id="collapseOne"
-              className="accordion-collapse show"
-              aria-labelledby="headingBasicsOne"
-              data-bs-parent="#accordionFAQ"
+  {/* Heading */}
+  <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+    <h2>Still curious?</h2>
+  </div>
+  {/* End Heading */}
+  <div className="w-lg-65 mx-lg-auto">
+    {/* Accordion */}
+    <div className="accordion accordion-flush accordion-lg" id="accordionFAQ">
+      {/* Accordion Item */}
+      {faq.map((item) => (
+        <div className="accordion-item" key={item.id}>
+          <h2 className="accordion-header" id={item.headerId}>
+            <button
+              className={`accordion-button ${activeId === item.id ? "" : "collapsed"}`}
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#${item.id}`}
+              aria-expanded="false"
+              aria-controls={item.id}
+              onClick={() => toggleAccordion(item.id)}
             >
-              <div className="accordion-body">We build solutions for finance, healthcare, retail, logistics, and emerging tech sectors.
-              </div>
-            </div>
+              {item.question}
+            </button>
+          </h2>
+          <div
+            id={item.id}
+            className={`accordion-collapse collapse ${activeId === item.id ? "show" : ""}`}
+            aria-labelledby={item.headerId}
+            data-bs-parent="#accordionFAQ"
+            style={{border:'1px solid red'}}
+          >
           </div>
-          {/* End Accordion Item */}
-          {/* Accordion Item */}
-          <div className="accordion-item">
-            <div className="accordion-header" id="headingBasicsTwo">
-              <a
-                className="accordion-button collapsed"
-                role="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Do you provide ongoing support and maintenance?
-              </a>
-            </div>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingBasicsTwo"
-              data-bs-parent="#accordionFAQ"
-            >
-              <div className="accordion-body">Yes! We offer long-term support, updates, and security patches to keep your software running smoothly.
-              </div>
-            </div>
-          </div>
-          {/* End Accordion Item */}
-          {/* Accordion Item */}
-          <div className="accordion-item">
-            <div className="accordion-header" id="headingBasicsThree">
-              <a
-                className="accordion-button collapsed"
-                role="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >What cloud platforms do you work with?
-              </a>
-            </div>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingBasicsThree"
-              data-bs-parent="#accordionFAQ"
-            >
-              <div className="accordion-body">We support AWS, Google Cloud, Azure, and private cloud solutions.
-              </div>
-            </div>
-          </div>
-          {/* End Accordion Item */}
-          {/* Accordion Item */}
-          <div className="accordion-item">
-            <div className="accordion-header" id="headingBasicsFour">
-              <a
-                className="accordion-button collapsed"
-                role="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >Can you integrate AI into my application?
-              </a>
-            </div>
-            <div
-              id="collapseFour"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingBasicsFour"
-              data-bs-parent="#accordionFAQ"
-            >
-              <div className="accordion-body">
-              Absolutely! We specialize in AI-driven automation, chatbots, and predictive analytics..
-              </div>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <div className="accordion-header" id="headingBasicsFour">
-              <a
-                className="accordion-button collapsed"
-                role="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >How long does a typical project take?
-              </a>
-            </div>
-            <div
-              id="collapseFour"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingBasicsFour"
-              data-bs-parent="#accordionFAQ"
-            >
-              <div className="accordion-body">Project timelines vary, but MVPs can be delivered in 8–12 weeks, with full-scale solutions taking 3–6 months.</div>
-            </div>
-          </div>
-          {/* End Accordion Item */}
+            {activeId == item.id && <div className="accordion-body">{item.answer}</div>}
         </div>
-        {/* End Accordion */}
-      </div>
+      ))}
+      {/* End Accordion Items */}
     </div>
+    {/* End Accordion */}
+  </div>
+</div>;
+
 
     <div className="container content-space-b-2 content-space-b-lg-3">
       {/* Heading */}

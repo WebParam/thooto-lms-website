@@ -18,7 +18,7 @@ useEffect(() => {
         <header
             id="header"
             className="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide navbar-scrolled"
-            style={{justifyContent:'space-between'}}
+            style={{justifyContent:'space-between', zIndex: '1000'}}
             data-hs-header-options='{
                 "fixMoment": 1000,
                 "fixEffect": "slide"
