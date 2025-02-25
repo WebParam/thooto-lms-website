@@ -11,7 +11,7 @@ const pathname = usePathname();
 
 useEffect(() => {
     if (open) setOpen(false);
-},[pathname])
+},[pathname, open])
 
     return (
         <>
