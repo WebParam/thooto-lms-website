@@ -8,7 +8,7 @@ export default function HeroSection() {
           <div
             className="swiper-slide gradient-y-overlay-sm-gray-900 bg-img-start"
             style={{
-              backgroundImage: 'url("./assets/img/1920x800/img2.jpg")',
+              backgroundImage: 'url("./assets/img/others/hero.jpg")',
               width: '100%',
               transitionDuration: "0ms",
             }}

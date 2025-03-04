@@ -18,7 +18,7 @@ export default function Page() {
           {/* Fancybox */}
           <a
             className="video-player video-player-btn"
-            href="https://www.youtube.com/watch?v=d4eDWc8g0e0"
+            href="#"
             role="button"
             data-fslightbox="youtube-video"
           >
@@ -44,7 +44,7 @@ export default function Page() {
           <div className="device-tablet-frame">
             <img
               className="device-tablet-img"
-              src="./assets/img/1618x1010/img1.jpg"
+              src="./assets/img/others/lms-hero-1.jpg"
               alt="Image Description"
             />
           </div>
@@ -55,7 +55,7 @@ export default function Page() {
           <div className="device-vertical-tablet-frame">
             <img
               className="device-vertical-tablet-img"
-              src="./assets/img/533x711/img2.jpg"
+              src="./assets/img/others/lms-hero-2.jpg"
               alt="Image Description"
             />
           </div>
@@ -84,13 +84,13 @@ export default function Page() {
               <span className="device-browser-header-btn-list-btn" />
             </div>
             <div className="device-browser-header-browser-bar">
-              www.htmlstream.com/front/
+              www.paramsolutions.com
             </div>
           </div>
           <div className="device-browser-frame">
             <img
               className="device-browser-img"
-              src="./assets/img/1618x1010/img2.jpg"
+              src="./assets/img/others/lms-hero.jpg"
               alt="Image Description"
             />
           </div>
@@ -629,7 +629,7 @@ export default function Page() {
     {/* End Col */}
     <div className="col-lg-6">
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-6 card">
           {/* Article */}
           <a
             className="d-block aos-init aos-animate"
@@ -639,7 +639,7 @@ export default function Page() {
           >
             <img
               className="w-100 rounded-2"
-              src="./assets/img/400x500/img26.jpg"
+              src="https://www.icachef.co.za/wp-content/uploads/2024/11/ICA-QCTO-Accreditation.png"
               alt="img Description"
             />
             <div className="py-4">
