@@ -42,22 +42,10 @@ Johannesburg, 2196
                 About
               </a>
             </li>
-            <li>
-              <a className="link-sm link-light" href="#">
-                Careers{" "}
-                <span className="badge bg-warning text-dark rounded-pill ms-1">
-                  We are hiring
-                </span>
-              </a>
-            </li>
+           
             <li>
               <a className="link-sm link-light" href="#">
                 Blog
-              </a>
-            </li>
-            <li>
-              <a className="link-sm link-light" href="#">
-                Customers <i className="bi-box-arrow-up-right small ms-1" />
               </a>
             </li>
             <li>
@@ -82,34 +70,6 @@ Johannesburg, 2196
             <li>
               <a className="link-sm link-light" href="#">
                 Pricing
-              </a>
-            </li>
-          </ul>
-          {/* End List */}
-        </div>
-        {/* End Col */}
-        <div className="col-sm mb-7 mb-sm-0">
-          <h5 className="text-white mb-3">Documentation</h5>
-          {/* List */}
-          <ul className="list-unstyled list-py-1 mb-0">
-            <li>
-              <a className="link-sm link-light" href="#">
-                Support
-              </a>
-            </li>
-            <li>
-              <a className="link-sm link-light" href="#">
-                Docs
-              </a>
-            </li>
-            <li>
-              <a className="link-sm link-light" href="#">
-                Status
-              </a>
-            </li>
-            <li>
-              <a className="link-sm link-light" href="#">
-                Tech Requirements
               </a>
             </li>
           </ul>
@@ -163,31 +123,11 @@ Johannesburg, 2196
           {/* Socials */}
           <ul className="list-inline mb-0">
             <li className="list-inline-item">
-              <a className="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i className="bi-facebook" />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i className="bi-google" />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i className="bi-twitter" />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i className="bi-github" />
-              </a>
-            </li>
-            <li className="list-inline-item">
               {/* Button Group */}
               <div className="btn-group">
                 <button
                   type="button"
-                  className="btn btn-soft-light btn-xs dropdown-toggle"
+                  className="btn btn-soft-light btn-xs"
                   id="footerSelectLanguage"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -203,59 +143,6 @@ Johannesburg, 2196
                     <span>English (US)</span>
                   </span>
                 </button>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="footerSelectLanguage"
-                >
-                  <a
-                    className="dropdown-item d-flex align-items-center active"
-                    href="#"
-                  >
-                    <img
-                      className="avatar avatar-xss avatar-circle me-2"
-                      src="./assets/vendor/flag-icon-css/flags/1x1/us.svg"
-                      alt="img description"
-                      width={16}
-                    />
-                    <span>English (US)</span>
-                  </a>
-                  <a
-                    className="dropdown-item d-flex align-items-center"
-                    href="#"
-                  >
-                    <img
-                      className="avatar avatar-xss avatar-circle me-2"
-                      src="./assets/vendor/flag-icon-css/flags/1x1/de.svg"
-                      alt="img description"
-                      width={16}
-                    />
-                    <span>Deutsch</span>
-                  </a>
-                  <a
-                    className="dropdown-item d-flex align-items-center"
-                    href="#"
-                  >
-                    <img
-                      className="avatar avatar-xss avatar-circle me-2"
-                      src="./assets/vendor/flag-icon-css/flags/1x1/es.svg"
-                      alt="img description"
-                      width={16}
-                    />
-                    <span>Español</span>
-                  </a>
-                  <a
-                    className="dropdown-item d-flex align-items-center"
-                    href="#"
-                  >
-                    <img
-                      className="avatar avatar-xss avatar-circle me-2"
-                      src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg"
-                      alt="img description"
-                      width={16}
-                    />
-                    <span>中文 (繁體)</span>
-                  </a>
-                </div>
               </div>
               {/* End Button Group */}
             </li>

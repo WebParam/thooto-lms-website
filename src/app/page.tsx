@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="card h-100">
                   <img
                     className="card-img-top"
-                    src="./assets/img/480x320/img7.jpg"
+                    src="./assets/img/others/card-1.jpg"
                     alt="img Description"
                   />
                   <div className="card-body">
@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="card h-100">
                   <img
                     className="card-img-top"
-                    src="./assets/img/480x320/img6.jpg"
+                    src="./assets/img/others/card-2.jpg"
                     alt="img Description"
                   />
                   <div className="card-body">
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="card h-100">
                   <img
                     className="card-img-top"
-                    src="./assets/img/480x320/img14.jpg"
+                    src="./assets/img/others/card-3.jpg"
                     alt="img Description"
                   />
                   <div className="card-body">
