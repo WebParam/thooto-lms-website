@@ -113,7 +113,7 @@ export default function Home() {
                       </h4>
                     </div>
                     <p className="card-text">
-                    🚀 Helping companies launch scalable tech solutions Our custom-built applications power businesses across industries, driving innovation and efficiency.
+                    Helping companies launch scalable tech solutions Our custom-built applications power businesses across industries, driving innovation and efficiency.
                     </p>
                   </div>
                   <div className="card-footer pt-0">
@@ -149,7 +149,7 @@ export default function Home() {
                       <h4>QCTO LMS Solutions</h4>
                     </div>
                     <p className="card-text">
-                      🎓 Enabling seamless online training & accreditation A platform designed to simplify training provider operations, from learner management to compliance.
+                      Enabling seamless online training & accreditation A platform designed to simplify training provider operations, from learner management to compliance.
                     </p>
                   </div>
                   <div className="card-footer pt-0">
@@ -187,7 +187,7 @@ export default function Home() {
                       </h4>
                     </div>
                     <p className="card-text">
-                    🎥 Revolutionizing learning with next-gen digital experiences We convert traditional training materials into engaging AI-driven content, making education more accessible.
+                    Revolutionizing learning with next-gen digital experiences We convert traditional training materials into engaging AI-driven content, making education more accessible.
                     </p>
                   </div>
                   <div className="card-footer pt-0">
