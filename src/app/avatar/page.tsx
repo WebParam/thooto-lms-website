@@ -142,7 +142,7 @@ export default function Page() {
         <div className="card light-green-bg text-center">
           <div className="card-body">
             <div className="w-75 mx-auto">
-              <h3>Integrate with the tools and workflow you already use</h3>
+              <h3 className="text-dark">Integrate with the tools and workflow you already use</h3>
             </div>
           </div>
           <div className="w-75 mx-auto">
