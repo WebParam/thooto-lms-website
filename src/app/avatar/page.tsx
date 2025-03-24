@@ -44,7 +44,7 @@ export default function Page() {
           <div className="w-75 mx-auto">
             <img
               className="img-fluid rounded-top-2"
-              src="./assets/img/407x472/img7.jpg"
+              src="./assets/img/others/avatar1.jpg"
               alt="Image Description"
             />
           </div>
@@ -148,7 +148,7 @@ export default function Page() {
           <div className="w-75 mx-auto">
             <img
               className="img-fluid rounded-top-2"
-              src="./assets/img/407x472/img8.jpg"
+              src="./assets/img/others/graph-image.jpg"
               alt="Image Description"
             />
           </div>
