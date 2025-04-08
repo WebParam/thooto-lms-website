@@ -1,17 +1,11 @@
 'use client'
-import { useEffect } from "react";
-import HeroSection from "../components/hero/Hero";
 import Subscribe from "../components/subscribe/Subscribe";
 import Footer from "../components/footer/Footer";
 
 export default function page() {
-  useEffect(() => {
-  }, []);
   
   return (
     <div>
-      {/* <HeroSection /> */}
-      
       <div className="position-relative">
         <div className="bg-img-hero" style={{ 
           backgroundImage: "url('/assets/img/1920x1080/img5.jpg')",
@@ -22,7 +16,7 @@ export default function page() {
           <div className="container content-space-t-3 content-space-b-2 content-space-t-lg-5 content-space-b-lg-3">
             <div className="w-md-75 w-lg-50 text-center mx-md-auto">
               <h1 className="text-black">Contact Us</h1>
-              <p className="text-black">We'd love to hear from you. Get in touch with our team.</p>
+              <p className="text-black">We would love to hear from you. Get in touch with our team.</p>
             </div>
           </div>
         </div>
@@ -33,7 +27,7 @@ export default function page() {
           <div className="col-lg-6 mb-7 mb-lg-0">
             <div className="pe-lg-3">
               <h2>Get in touch</h2>
-              <p>Fill out the form and we'll get back to you shortly.</p>
+              <p>Fill out the form and we will get back to you shortly.</p>
               <p>Your Information will be kept confidential.</p>
               
               <form className="js-validate">
@@ -82,7 +76,7 @@ export default function page() {
           <div className="col-lg-5">
             <div className="ps-lg-3">
               <h3>Contact Information</h3>
-              <p>We're here to help and answer any questions you might have.</p>
+              <p>We are here to help and answer any questions you might have.</p>
 
               <div className="mb-4">
                 <h4>Email</h4>

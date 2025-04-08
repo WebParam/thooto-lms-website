@@ -69,7 +69,7 @@ export default function Page() {
           <div className="device-mobile-frame">
             <img
               className="device-mobile-img"
-              src="./assets/img/others/AboutCourses.jpg"
+              src="./assets/img/others/thootoonline_logo.jpg"
               alt="Image Description"
             />
           </div>
