@@ -16,7 +16,7 @@ export default function Page() {
                 </div>
                 {/* End Heading */}
                 <div className="d-grid d-sm-flex justify-content-sm-center align-items-sm-center gap-3">
-                <a className="btn text-light bg-green btn-transition" href="#">
+                <a className="btn text-light bg-green btn-transition" href="/contact">
                     Contact sales
                 </a>
                 <small>or</small>
@@ -354,7 +354,7 @@ export default function Page() {
     {/* End Row */}
     <div className="text-center">
       <div className="d-grid d-sm-flex justify-content-sm-center align-items-sm-center gap-3 mb-3">
-        <a className="btn btn-light btn-transition" href="#">
+        <a className="btn btn-light btn-transition" href="/contact">
           Talk to our experts
         </a>
         <small className="text-white-70">or</small>
