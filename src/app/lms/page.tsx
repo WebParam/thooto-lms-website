@@ -568,20 +568,21 @@ export default function Page() {
   <div className="container content-space-b-2">
     <div className="position-relative">
       <div className="text-center rounded-2 p-4 p-md-7 text-light light-green-bg" style={{backgroundColor:'rgb(32,59,17), 0.5'}}>
-        <img
+        {/* <img
           className="avatar avatar-lg avatar-4x3 mx-auto mb-4"
           src="./assets/svg/brands/amazon-primary.svg"
           alt="SVG Logo"
-        />
+        /> */}
+        <h3>Fraktional</h3>
         {/* Blockquote */}
         <figure className="w-md-80 w-lg-50 mx-md-auto">
           <blockquote className="blockquote">
             With <strong>thooto</strong>, we’ve transformed our training programs, ensuring seamless compliance while enhancing learner engagement.”
           </blockquote>
           <figcaption className="blockquote-footer">
-            Christina Kray
+            Zidane James
             <span className="blockquote-footer-source">
-              Social Media Executive, Amazon
+              Social Media Executive, Fraktional
             </span>
           </figcaption>
         </figure>
