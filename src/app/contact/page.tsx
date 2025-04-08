@@ -22,7 +22,7 @@ export default function page() {
           <div className="container content-space-t-3 content-space-b-2 content-space-t-lg-5 content-space-b-lg-3">
             <div className="w-md-75 w-lg-50 text-center mx-md-auto">
               <h1 className="text-black">Contact Us</h1>
-              <p className="text-black-70">We'd love to hear from you. Get in touch with our team.</p>
+              <p className="text-black">We'd love to hear from you. Get in touch with our team.</p>
             </div>
           </div>
         </div>

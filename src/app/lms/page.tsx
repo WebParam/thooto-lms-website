@@ -44,7 +44,7 @@ export default function Page() {
           <div className="device-tablet-frame">
             <img
               className="device-tablet-img"
-              src="./assets/img/others/lms-hero-1.jpg"
+              src="./assets/img/others/ThootoOffers.jpg"
               alt="Image Description"
             />
           </div>
@@ -55,7 +55,7 @@ export default function Page() {
           <div className="device-vertical-tablet-frame">
             <img
               className="device-vertical-tablet-img"
-              src="./assets/img/others/lms-hero-2.jpg"
+              src="./assets/img/others/AboutThooto.jpg"
               alt="Image Description"
             />
           </div>
@@ -69,7 +69,7 @@ export default function Page() {
           <div className="device-mobile-frame">
             <img
               className="device-mobile-img"
-              src="./assets/img/407x867/img5.jpg"
+              src="./assets/img/others/AboutCourses.jpg"
               alt="Image Description"
             />
           </div>
@@ -90,7 +90,7 @@ export default function Page() {
           <div className="device-browser-frame">
             <img
               className="device-browser-img"
-              src="./assets/img/others/lms-hero.jpg"
+              src="./assets/img/others/thootoonline_cover.jpg"
               alt="Image Description"
             />
           </div>
