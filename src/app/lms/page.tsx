@@ -11,7 +11,7 @@ export default function Page() {
           {/* Heading */}
           <div className="mb-5">
             <h1 className="display-4">A new standard in online learning</h1>
-            <p className="lead">Empowering training providers with a seamless QCTO-compliant Learning Management System, designed to streamline course delivery, learner tracking, and accreditation compliance.
+            <p className="lead">Our LMS is built for skills development, streamlining accredited program delivery and BEE compliance through automation, document management, learner tracking, and real-time progress analytics.
             </p>
           </div>
           {/* End Title & Description */}

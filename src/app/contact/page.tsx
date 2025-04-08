@@ -108,11 +108,11 @@ export default function page() {
                       <i className="bi-facebook"></i>
                     </a>
                   </li>
-                  {/* <li className="list-inline-item">
-                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="#">
-                      <i className="bi-twitter"></i>
+                  <li className="list-inline-item">
+                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="https://www.tiktok.com/@officialthooto?_t=ZM-8vMXuDyC4Zx&_r=1" target="_blank">
+                      <i className="bi-tiktok"></i>
                     </a>
-                  </li> */}
+                </li>
                   <li className="list-inline-item">
                     <a className="btn btn-soft-secondary btn-sm btn-icon" href="https://www.linkedin.com/company/web-param/" target="_blank">
                       <i className="bi-linkedin"></i>
