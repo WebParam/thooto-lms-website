@@ -86,17 +86,17 @@ export default function page() {
 
               <div className="mb-4">
                 <h4>Email</h4>
-                <p>info@yourcompany.com</p>
+                <p>Team@thooto.org</p>
               </div>
 
               <div className="mb-4">
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>+27 (64) 901-6606</p>
               </div>
 
               <div className="mb-4">
                 <h4>Business Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
                 <p>Saturday - Sunday: Closed</p>
               </div>
 
@@ -104,17 +104,17 @@ export default function page() {
                 <h4>Follow Us</h4>
                 <ul className="list-inline mb-0">
                   <li className="list-inline-item">
-                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="#">
+                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="https://www.facebook.com/share/1APJGa6tTs/" target="_blank">
                       <i className="bi-facebook"></i>
                     </a>
                   </li>
-                  <li className="list-inline-item">
+                  {/* <li className="list-inline-item">
                     <a className="btn btn-soft-secondary btn-sm btn-icon" href="#">
                       <i className="bi-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li className="list-inline-item">
-                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="#">
+                    <a className="btn btn-soft-secondary btn-sm btn-icon" href="https://www.linkedin.com/company/web-param/" target="_blank">
                       <i className="bi-linkedin"></i>
                     </a>
                   </li>
@@ -125,7 +125,7 @@ export default function page() {
                 <h4>Location</h4>
                 <div className="ratio ratio-16x9">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096036!2d144.95373631531978!3d-37.817327679751734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1635167261304!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1790.788617697298!2d28.04045438885574!3d-26.145324005594635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s17%20Tywhitt%2C%20The%20zone%2C%20Rosebank!5e0!3m2!1sen!2sza!4v1744118244143!5m2!1sen!2sza"
                     width="600" 
                     height="450" 
                     style={{border:0}} 
