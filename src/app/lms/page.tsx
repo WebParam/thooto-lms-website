@@ -40,22 +40,22 @@ export default function Page() {
     >
       <div className="devices-wrap devices-rotated-body">
         {/* Tablet Device */}
-        <figure className="device-tablet" style={{ width: "27rem" }}>
+        <figure className="device-tablet" style={{ width: "25rem" }}>
           <div className="device-tablet-frame">
             <img
               className="device-tablet-img"
-              src="./assets/img/others/ThootoOffers.jpg"
+              src="./assets/img/others/courseAnalytics.jpg"
               alt="Image Description"
             />
           </div>
         </figure>
         {/* End Tablet Device */}
         {/* Vertical Tablet Device */}
-        <figure className="device-vertical-tablet" style={{ width: "18rem" }}>
+        <figure className="device-vertical-tablet" style={{ width: "20rem" }}>
           <div className="device-vertical-tablet-frame">
             <img
               className="device-vertical-tablet-img"
-              src="./assets/img/others/AboutThooto.jpg"
+              src="./assets/img/others/courses.jpg"
               alt="Image Description"
             />
           </div>
@@ -64,19 +64,19 @@ export default function Page() {
         {/* Mobile Device */}
         <figure
           className="device-mobile align-self-start"
-          style={{ width: "10rem" }}
+          style={{ width: "20rem" }}
         >
           <div className="device-mobile-frame">
             <img
               className="device-mobile-img"
-              src="./assets/img/others/thootoonline_logo.jpg"
+              src="./assets/img/others/courseApplicants.jpg"
               alt="Image Description"
             />
           </div>
         </figure>
         {/* End Mobile Device */}
         {/* Browser Device */}
-        <figure className="device-browser" style={{ width: "35rem" }}>
+        <figure className="device-browser" style={{ width: "22rem" }}>
           <div className="device-browser-header">
             <div className="device-browser-header-btn-list">
               <span className="device-browser-header-btn-list-btn" />
@@ -90,7 +90,7 @@ export default function Page() {
           <div className="device-browser-frame">
             <img
               className="device-browser-img"
-              src="./assets/img/others/thootoonline_cover.jpg"
+              src="./assets/img/others/leaderboard.jpg"
               alt="Image Description"
             />
           </div>
