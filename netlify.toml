@@ -2,7 +2,13 @@
   # No build command needed for static site
   command = ""
   # Publish the root directory since static files are at the root
+  # Note: For static sites, Netlify will auto-detect if publish is not set
   publish = "."
+
+# Disable Next.js plugin - this is a static HTML site, not a Next.js app
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  disabled = true
 
 # Redirects section - uncomment and configure if needed
 # [[redirects]]
