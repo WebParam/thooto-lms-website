@@ -1,0 +1,13 @@
+[build]
+  # No build command needed for static site
+  command = ""
+  # Publish the root directory since static files are at the root
+  publish = "."
+
+[[redirects]]
+  # Redirect all routes to index.html for SPA-like behavior (optional)
+  # Uncomment if you want this behavior
+  # from = "/*"
+  # to = "/index.html"
+  # status = 200
+
