@@ -995,6 +995,8 @@ header.main-header .header-sticky.active {
     align-items: center;
     justify-content: center;
     height: 76px;
+    vertical-align: middle;
+    position: relative;
 }
 
 @keyframes scroll {
@@ -1008,20 +1010,83 @@ header.main-header .header-sticky.active {
 }
 
 .scrolling-content img {
-    width: 100%;
+    width: auto;
     max-width: 176px;
-    height: 40px;
+    max-height: 60px;
+    height: auto;
     object-fit: contain;
+    object-position: center;
     display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    align-self: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: auto;
 }
 
-.scrolling-content img[src*="microsoft-logo-svgrepo-com.svg"],
-.scrolling-content img[src*="amazon-2-logo-svgrepo-com.svg"],
-.scrolling-content img[src*="vodacom.svg"],
+.scrolling-content img[src*="amazon-2-logo-svgrepo-com.svg"] {
+    max-width: 264px;
+    max-height: 90px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="vodacom.svg"] {
+    max-width: 422px;
+    max-height: 144px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="stb.svg"] {
+    max-width: 508px;
+    max-height: 173px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="sanlam.svg1.svg"] {
+    max-width: 508px;
+    max-height: 173px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="sanlam.svg"]:not([src*="sanlam.svg1.svg"]) {
+    max-width: 538px;
+    max-height: 184px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="microsoft-logo-svgrepo-com.svg"] {
+    max-width: 436px;
+    max-height: 149px;
+    object-position: center;
+    align-self: center;
+}
+
 .scrolling-content img[src*="accenture.svg"] {
-    max-width: 334.4px;
-    height: 76px;
-    object-fit: contain;
+    max-width: 141px;
+    max-height: 48px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="altron.svg"],
+.scrolling-content img[src*="logo-atronsolutions.svg"] {
+    max-width: 194px;
+    max-height: 66px;
+    object-position: center;
+    align-self: center;
+}
+
+.scrolling-content img[src*="Altron Logo Dark.svg"] {
+    max-width: 175px;
+    max-height: 59px;
+    object-position: center;
+    align-self: center;
 }
 
 /************************************/
@@ -1728,6 +1793,10 @@ header.main-header .header-sticky.active {
     margin-right: 15px;
 }
 
+.our-testimonial-content .section-title h2 {
+    font-size: 53px;
+}
+
 .satisfy-client-box {
     display: flex;
     align-items: center;
@@ -1957,8 +2026,20 @@ header.main-header .header-sticky.active {
     background-color: #735b9bff;
 }
 
+.cta-box .section-title h3 {
+    color: #ffffff;
+}
+
+.cta-box .section-title h2 {
+    color: #ffffff;
+}
+
 .cta-box .section-title p {
-    color: #000000;
+    color: #ffffff;
+}
+
+.cta-box-btn .btn-default {
+    color: #ffffff;
 }
 
 .cta-box-btn {
@@ -4381,6 +4462,10 @@ header.main-header .header-sticky.active {
         margin: 0 0 30px;
     }
 
+    .our-testimonial-content .section-title h2 {
+        font-size: 43px;
+    }
+
     .satisfy-client-box {
         margin-top: 30px;
     }
@@ -5109,6 +5194,10 @@ header.main-header .header-sticky.active {
         font-size: 26px;
     }
 
+    .our-testimonial-content .section-title h2 {
+        font-size: 31px;
+    }
+
     .section-title p {
         margin-top: 10px;
     }
@@ -5192,21 +5281,88 @@ header.main-header .header-sticky.active {
         align-items: center;
         justify-content: center;
         height: 66.5px;
+        vertical-align: middle;
+        position: relative;
     }
 
     .scrolling-content img {
-        height: 35px;
+        width: auto;
+        max-width: 176px;
+        max-height: 50px;
+        height: auto;
         object-fit: contain;
+        object-position: center;
         display: block;
+        vertical-align: middle;
+        margin: 0 auto;
+        align-self: center;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        image-rendering: auto;
     }
 
-    .scrolling-content img[src*="microsoft-logo-svgrepo-com.svg"],
-    .scrolling-content img[src*="amazon-2-logo-svgrepo-com.svg"],
-    .scrolling-content img[src*="vodacom.svg"],
+    .scrolling-content img[src*="amazon-2-logo-svgrepo-com.svg"] {
+        max-width: 264px;
+        max-height: 75px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="vodacom.svg"] {
+        max-width: 422px;
+        max-height: 120px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="stb.svg"] {
+        max-width: 508px;
+        max-height: 144px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="sanlam.svg1.svg"] {
+        max-width: 508px;
+        max-height: 144px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="sanlam.svg"]:not([src*="sanlam.svg1.svg"]) {
+        max-width: 538px;
+        max-height: 153px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="microsoft-logo-svgrepo-com.svg"] {
+        max-width: 836px;
+        max-height: 324px;
+        object-position: center;
+        align-self: center;
+    }
+
     .scrolling-content img[src*="accenture.svg"] {
-        max-width: 334.4px;
-        height: 66.5px;
-        object-fit: contain;
+        max-width: 141px;
+        max-height: 40px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="altron.svg"],
+    .scrolling-content img[src*="logo-atronsolutions.svg"] {
+        max-width: 194px;
+        max-height: 55px;
+        object-position: center;
+        align-self: center;
+    }
+
+    .scrolling-content img[src*="Altron Logo Dark.svg"] {
+        max-width: 175px;
+        max-height: 50px;
+        object-position: center;
+        align-self: center;
     }
 
     .about-us-counters {

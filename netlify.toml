@@ -1,18 +1,13 @@
-# Static HTML Site Configuration
-# This is a pure static HTML website - NOT a Next.js application
 [build]
-  # No build command needed for static HTML site
+  # No build command needed for static site
   command = ""
-  # Publish the root directory where all HTML files are located
+  # Publish the root directory since static files are at the root
   publish = "."
 
-# IMPORTANT: Remove the Next.js plugin from Netlify UI
-# Go to: Site Settings > Build & Deploy > Plugins
-# Remove: @netlify/plugin-nextjs
-
-# Redirects section - uncomment and configure if needed
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
+[[redirects]]
+  # Redirect all routes to index.html for SPA-like behavior (optional)
+  # Uncomment if you want this behavior
+  # from = "/*"
+  # to = "/index.html"
+  # status = 200
 
