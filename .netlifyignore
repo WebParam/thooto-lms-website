@@ -1,0 +1,8 @@
+# This file tells Netlify to ignore Next.js-related patterns
+# This is a static HTML site, not a Next.js application
+.next/
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+
