@@ -12,6 +12,9 @@ Thumbs.db
 *.swo
 *~
 
+# Temp/backup files
+*.tmp
+
 # Logs
 *.log
 npm-debug.log*
